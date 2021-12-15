@@ -3,19 +3,16 @@ function myFunction() {
   $('#overlay').toggleClass('show-overlay');
 }
 function searchClick() {
-  $('#search-input').toggleClass('buttons__search-input--active');
+  $('#search-input').addClass('buttons__search-input--active');
+  $('#search-close').addClass('buttons__search-close--active');
+}
+function closeClick() {
+  $('#search-input').removeClass('buttons__search-input--active');
+  $('#search-close').removeClass('buttons__search-close--active');
 }
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
+// function resourcesDropdown() {
+//   $('#resourcesDropdown').toggleClass('show');
+//   $('#overlay').toggleClass('show-overlay');
+// }

@@ -59,9 +59,10 @@
               <a href="#" class="menu__link">Pricing</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">
-                Resources
-              </a>
+              <a href="#" class="menu__link" id="resourcesDropdown" onclick="resourcesDropdown()">Resources</a>
+              <div class="dropdown-content">
+
+              </div>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Clients</a>
@@ -71,8 +72,13 @@
             </li>
           </ul>
           <div class="buttons">
-            <a class="buttons__search-button" onclick="searchClick()">
-              <input class="buttons__search-input" id="search-input" type="text">
+            <a  href="#" class="buttons__search-button" onclick="searchClick()">
+              <input class="buttons__search-input" id="search-input" placeholder="Search CourseCo" type="text">
+            </a>
+            <a href="#"class="buttons__search-close" id="search-close" onclick="closeClick()">
+              <svg width="20px" height="20px">
+                <use xlink:href="../img/icons.svg#search-close"></use>
+              </svg>
             </a>
             <button class="buttons__button">
               Try a demo
