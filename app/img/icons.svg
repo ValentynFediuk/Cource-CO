@@ -1,0 +1,11 @@
+<svg>
+    <symbol id="elipse" width="307" height="154" viewBox="0 0 307 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="153.5" cy="0.5" r="153.5" fill="#96C0D0"/>
+    </symbol>
+    <symbol id="green-elipse" width="115" height="115" viewBox="0 0 115 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="57.5" cy="57.5" r="57.5" fill="#A1D7A6"/>
+    </symbol>
+    <symbol id="white-elipse" width="200" height="325" viewBox="0 0 200 325" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="35.5" cy="152.5" r="152.5" fill="#E6ECEC"/>
+    </symbol>
+</svg>
