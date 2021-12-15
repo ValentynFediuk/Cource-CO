@@ -2,6 +2,9 @@ function myFunction() {
   $('#myDropdown').toggleClass('show');
   $('#overlay').toggleClass('show-overlay');
 }
+function searchClick() {
+  $('#search-input').toggleClass('buttons__search-input--active');
+}
 
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {

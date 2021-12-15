@@ -19,7 +19,7 @@
           <ul class="menu">
             <li class="menu__item">
               <a href="#" class="menu__link dropbtn" onclick="myFunction()">Product</a>
-              <div class="hero__overlay" id="overlay"></div>
+              <div class="hero__overlay" id="overlay" onclick="myFunction()"></div>
               <div class="dropdown-content" id="myDropdown">
                 <div class="dropdown-content__item">
                   <div class="dropdown-content__item-wrapper">
@@ -71,8 +71,8 @@
             </li>
           </ul>
           <div class="buttons">
-            <a class="buttons__search-button">
-              <input class="buttons__search-input" type="text">
+            <a class="buttons__search-button" onclick="searchClick()">
+              <input class="buttons__search-input" id="search-input" type="text">
             </a>
             <button class="buttons__button">
               Try a demo
