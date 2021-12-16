@@ -16,6 +16,7 @@ function bookingClick() {
 function dropdownItemClick() {
   $('#dropdown-item-wrapper').toggleClass('dropdown-content__item-wrapper--active');
   $('#booking-icon').toggleClass('dropdown-content__item-icon--active');
+  $('#item-arrow-right').toggleClass('dropdown-content__item-arrow-right--active');
 
 }
 
