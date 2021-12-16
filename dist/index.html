@@ -17,48 +17,87 @@
             <img class="logo__img" src="img/logo.svg" alt="#">
           </a>
           <ul class="menu">
-            <li class="menu__item">
-              <a href="#" class="menu__link dropbtn" onclick="myFunction()">Product</a>
-              <div class="hero__overlay" id="overlay" onclick="myFunction()"></div>
+            <li class="menu__item" id="product-dropdown">
+              <a href="#" class="menu__link dropbtn" onclick="productClick()">
+                Product
+                <svg class="menu__link-arrow" width="24" height="24">
+                  <use xlink:href="img/icons.svg#arrow-down"></use>
+                </svg>
+                <svg class="menu__link-underline" id="underline" width="71" height="2">
+                  <use xlink:href="img/icons.svg#underline"></use>
+                </svg>
+              </a>
+              <div class="hero__overlay" id="overlay" onclick="productClick()"></div>
               <div class="dropdown-content" id="myDropdown">
-                <div class="dropdown-content__item" onclick="bookingClick()">
-                  <div class="dropdown-content__item-wrapper" id="dropdown-item-wrapper" onclick="dropdownItemClick()">
-                    <div class="dropdown-content__icon-wrapper" id="booking-wrapper">
-                      <svg class="dropdown-content__item-icon" id="booking-icon" fill="#161D3C" width="38" height="40">
-                        <use class="dropdown-content__booking-path" xlink:href="img/icons.svg#booking"></use>
+                <div class="dropdown-content__inner">
+                  <div class="dropdown-content__item" onclick="bookingClick()">
+                    <div class="dropdown-content__item-wrapper" id="dropdown-item-wrapper" onclick="dropdownItemClick()">
+                      <div class="dropdown-content__icon-wrapper" id="booking-wrapper">
+                        <svg class="dropdown-content__item-icon" id="booking-icon" fill="#161D3C" width="38" height="40">
+                          <use class="dropdown-content__booking-path" xlink:href="img/icons.svg#booking"></use>
+                        </svg>
+                      </div>
+                      <h6 class="dropdown-content__item-title" id="booking-title">Booking Software</h6>
+                      <p class="dropdown-content__item-text">
+                        Far far away, behind the word mountains, far from the countries.
+                      </p>
+                      <svg class="dropdown-content__item-arrow-right" id="item-arrow-right" width="24" height="24">
+                        <use xlink:href="img/icons.svg#arrow-right"></use>
                       </svg>
                     </div>
-                    <h6 class="dropdown-content__item-title">Booking Software</h6>
-                    <p class="dropdown-content__item-text">
-                      Far far away, behind the word mountains, far from the countries.
-                    </p>
-                    <svg class="dropdown-content__item-arrow-right" id="item-arrow-right" width="24" height="24">
-                      <use xlink:href="img/icons.svg#arrow-right"></use>
-                    </svg>
+                  </div>
+                  <div class="dropdown-content__item">
+                    <div class="dropdown-content__item-wrapper">
+                      <h6 class="dropdown-content__item-title">Training Software</h6>
+                      <p class="dropdown-content__item-text">
+                        Far far away, behind the word mountains, far from the countries.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="dropdown-content__item">
+                    <div class="dropdown-content__item-wrapper">
+                      <h6 class="dropdown-content__item-title">Learning Software</h6>
+                      <p class="dropdown-content__item-text">
+                        Far far away, behind the word mountains, far from the countries.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="dropdown-content__item">
+                    <div class="dropdown-content__item-wrapper">
+                      <h6 class="dropdown-content__item-title">Integrations</h6>
+                      <p class="dropdown-content__item-text">
+                        Far far away, behind the word mountains, far from the countries.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="dropdown-content__item">
-                  <div class="dropdown-content__item-wrapper">
-                    <h6 class="dropdown-content__item-title">Training Software</h6>
-                    <p class="dropdown-content__item-text">
-                      Far far away, behind the word mountains, far from the countries.
-                    </p>
-                  </div>
-                </div>
-                <div class="dropdown-content__item">
-                  <div class="dropdown-content__item-wrapper">
-                    <h6 class="dropdown-content__item-title">Learning Software</h6>
-                    <p class="dropdown-content__item-text">
-                      Far far away, behind the word mountains, far from the countries.
-                    </p>
-                  </div>
-                </div>
-                <div class="dropdown-content__item">
-                  <div class="dropdown-content__item-wrapper">
-                    <h6 class="dropdown-content__item-title">Integrations</h6>
-                    <p class="dropdown-content__item-text">
-                      Far far away, behind the word mountains, far from the countries.
-                    </p>
+                <div class="dropdown-content__right" id="dropdown-right">
+                  <div class="dropdown-content__right-inner">
+                    <h6 class="dropdown-content__right-title">
+                      Booking Software
+                    </h6>
+                    <ul class="dropdown-content__right-list">
+                      <li class="dropdown-content__right-item">
+                        <a href="#" class="dropdown-content__right-link">
+                          Automation
+                        </a>
+                      </li>
+                      <li class="dropdown-content__right-item">
+                        <a href="#" class="dropdown-content__right-link">
+                          Manage Leads
+                        </a>
+                      </li>
+                      <li class="dropdown-content__right-item">
+                        <a href="#" class="dropdown-content__right-link">
+                          Insights & Reports
+                        </a>
+                      </li>
+                      <li class="dropdown-content__right-item">
+                        <a href="#" class="dropdown-content__right-link">
+                          Email & Communications
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -67,7 +106,12 @@
               <a href="#" class="menu__link">Pricing</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link" id="resourcesDropdown" onclick="resourcesDropdown()">Resources</a>
+              <a href="#" class="menu__link" id="resourcesDropdown" onclick="resourcesDropdown()">
+                Resources
+                <svg class="menu__link-arrow" width="24" height="24">
+                  <use xlink:href="img/icons.svg#arrow-down"></use>
+                </svg>
+              </a>
               <div class="dropdown-content">
 
               </div>
@@ -88,9 +132,9 @@
                 <use xlink:href="../img/icons.svg#search-close"></use>
               </svg>
             </a>
-            <button class="buttons__button">
+            <a class="buttons__button">
               Try a demo
-            </button>
+            </a>
           </div>
         </nav>
       </div>
@@ -111,9 +155,9 @@
         <p class="hero__text">
           The #1 rated training management software for training providers who want to save time and crush sales targets.
         </p>
-        <button class="hero__button">
+        <a class="hero__button">
           Try a DEMO
-        </button>
+        </a>
         <div class="office-bg">
           <div class="office-bg__left">
 

@@ -15,6 +15,8 @@ body {
   text-align: center;
 }
 .header {
+  position: fixed;
+  width: 100%;
   &__inner {
     border: 1px solid #E6ECEC;
     background: #fff;
@@ -39,16 +41,8 @@ body {
     position: relative;
     &:first-child a {
       padding-right: 43px;
-      &::before {
-        content: '';
-        position: absolute;
-        background: url("../img/underline.svg");
-        width: 70px;
-        height: 2px;
-        left: 0px;
-        top: 25px;
-      }
       &::after {
+        display: none;
         content: '';
         position: absolute;
         background: url("../img/arrow-down.svg");
@@ -56,19 +50,13 @@ body {
         height: 18px;
         right: 23px;
         top: 2px;
+        &:hover {
+          fill: #d7df3b;
+        }
       }
     }
     &:nth-child(3) a {
       padding-right: 43px;
-      &::after {
-        content: '';
-        position: absolute;
-        background: url("../img/arrow-down.svg");
-        width: 19px;
-        height: 18px;
-        right: 23px;
-        top: 2px;
-      }
     }
   }
   &__link {
@@ -76,11 +64,25 @@ body {
     font-weight: 500;
     padding-right: 30px;
     font-size: 14px;
+    fill: #374EAC;
+    &:hover {
+      fill: #d7df3b;
+      color: #D7DF3B;
+    }
   }
-  &__arrow-down {
+  &__link-arrow {
     position: absolute;
-    right: -11px;
-    top: 2px;
+    right: 20px;
+    top: 3px;
+  }
+  &__link-underline {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+  }
+  &__link-underline--active {
+    display: block;
   }
 }
 .elipse {
@@ -92,6 +94,7 @@ body {
   z-index: -1;
 }
 .white-elipse {
+  z-index: -2;
   position: absolute;
   height: 310px;
   top: 723px;
@@ -113,6 +116,10 @@ body {
     padding: 8px 20px;
     border: 2px solid #374EAC;
     text-transform: uppercase;
+    &:hover {
+      color: #fff;
+      background: #374EAC;
+    }
   }
   &__search-button {
     position: relative;
@@ -205,6 +212,7 @@ body {
   width: 950px;
   position: relative;
   margin-bottom: 85px;
+  z-index: -1;
   &__left {
     background: url("../img/office-left.png");
     background-repeat: no-repeat;
@@ -221,6 +229,7 @@ body {
   }
 }
 .trustedBy {
+  z-index: -1;
    & span {
      font-family: ProximaNova;
      font-weight: 400;
@@ -253,12 +262,10 @@ body {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  opacity: 0;
   transition: 0.5s ease;
-  &__wrapper {
-    background: #161D3C;
-    opacity: 0.3;
-    z-index: -999;
+  &__inner {
+    display: flex;
+    flex-direction: column;
   }
   &__item {
     padding: 20px;
@@ -323,6 +330,9 @@ body {
     font-family: Inter;
     color: #161D3C;
 }
+  &__item-title--active {
+    color: #374EAC;
+  }
   &__item-text {
     width: 228px;
     font-size: 12px;
@@ -339,11 +349,34 @@ body {
     display: block;
     top: 45px;
   }
+  &__right {
+    display: none;
+    background: #F2F3F6;
+    border-radius: 0px 8px 8px 0px;
+  }
+  &__right--active {
+    display: block;
+  }
+  &__right-inner {
+    padding: 40px;
+    color: #9498A9;
+    min-width: 270px;
+  }
+  &__right-title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 14px;
+
+  }
+  &__right-item {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
 }
-.show {
+.show-dropdown {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   opacity: 1;
   z-index: 11;
   top: 86px;
