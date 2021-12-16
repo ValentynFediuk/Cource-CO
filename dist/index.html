@@ -5,103 +5,141 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/min.style.css">
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Cource CO</title>
 </head>
 <body>
   <header class="header">
     <div class="header__inner">
-      <div class="header__top">
-        <div class="container">
-          <nav class="nav">
-            <a href="#" class="logo">
-              <img class="logo__img" src="img/logo.svg" alt="#">
-            </a>
-            <ul class="menu">
-              <li class="menu__item dropdown">
-                <a href="#" class="menu__link dropbtn">
-                  Product
-                </a>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="#home">Home</a>
-                  <a href="#about">About</a>
-                  <a href="#contact">Contact</a>
-                </div>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Pricing</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">
-                  Resources
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Clients</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Company</a>
-              </li>
-            </ul>
-            <div class="buttons">
-              <a class="buttons__search-button">
-                <input class="buttons__search-input" type="text">
-              </a>
-              <button class="buttons__button">
-                Try a demo
-              </button>
-            </div>
-          </nav>
-        </div>
-        <svg class="elipse">
-          <use xlink:href="img/icons.svg#elipse"></use>
-        </svg>
-        <svg class="white-elipse">
-          <use xlink:href="img/icons.svg#white-elipse"></use>
-        </svg>
-      </div>
       <div class="container">
-        <div class="header__descr">
-          <h1 class="header__title title">
-            Grow your training business, not your workload
-          </h1>
-          <p class="header__text">
-            The #1 rated training management software for training providers who want to save time and crush sales targets.
-          </p>
-          <button class="header__button">
-            Try a DEMO
-          </button>
-          <div class="office-bg">
-            <div class="office-bg__left">
+        <nav class="nav">
+          <a href="#" class="logo">
+            <img class="logo__img" src="img/logo.svg" alt="#">
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link dropbtn" onclick="myFunction()">Product</a>
+              <div class="hero__overlay" id="overlay" onclick="myFunction()"></div>
+              <div class="dropdown-content" id="myDropdown">
+                <div class="dropdown-content__item" onclick="bookingClick()">
+                  <div class="dropdown-content__item-wrapper" id="dropdown-item-wrapper" onclick="dropdownItemClick()">
+                    <div class="dropdown-content__icon-wrapper" id="booking-wrapper">
+                      <svg class="dropdown-content__item-icon" id="booking-icon" fill="#161D3C" width="38" height="40">
+                        <use class="dropdown-content__booking-path" xlink:href="img/icons.svg#booking"></use>
+                      </svg>
+                    </div>
+                    <h6 class="dropdown-content__item-title">Booking Software</h6>
+                    <p class="dropdown-content__item-text">
+                      Far far away, behind the word mountains, far from the countries.
+                    </p>
+                  </div>
+                </div>
+                <div class="dropdown-content__item">
+                  <div class="dropdown-content__item-wrapper">
+                    <h6 class="dropdown-content__item-title">Training Software</h6>
+                    <p class="dropdown-content__item-text">
+                      Far far away, behind the word mountains, far from the countries.
+                    </p>
+                  </div>
+                </div>
+                <div class="dropdown-content__item">
+                  <div class="dropdown-content__item-wrapper">
+                    <h6 class="dropdown-content__item-title">Learning Software</h6>
+                    <p class="dropdown-content__item-text">
+                      Far far away, behind the word mountains, far from the countries.
+                    </p>
+                  </div>
+                </div>
+                <div class="dropdown-content__item">
+                  <div class="dropdown-content__item-wrapper">
+                    <h6 class="dropdown-content__item-title">Integrations</h6>
+                    <p class="dropdown-content__item-text">
+                      Far far away, behind the word mountains, far from the countries.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Pricing</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" id="resourcesDropdown" onclick="resourcesDropdown()">Resources</a>
+              <div class="dropdown-content">
 
-            </div>
-            <div class="office-bg__right">
-              <svg class="green-elipse">
-                <use xlink:href="img/icons.svg#green-elipse"></use>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Clients</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Company</a>
+            </li>
+          </ul>
+          <div class="buttons">
+            <a  href="#" class="buttons__search-button" onclick="searchClick()">
+              <input class="buttons__search-input" id="search-input" placeholder="Search CourseCo" type="text">
+            </a>
+            <a href="#"class="buttons__search-close" id="search-close" onclick="closeClick()">
+              <svg width="20px" height="20px">
+                <use xlink:href="../img/icons.svg#search-close"></use>
               </svg>
-            </div>
+            </a>
+            <button class="buttons__button">
+              Try a demo
+            </button>
           </div>
-          <div class="trustedBy">
-            <span>Trysted By</span>
-            <img class="trustedBy__icon" src="img/carraig-safety.png" alt="Carraig Safety">
-            <img class="trustedBy__icon" src="img/irish-times-training.png" alt="Irish Times Training">
-            <img class="trustedBy__icon" src="img/ttm.png" alt="Training & Consultancy">
-            <img class="trustedBy__icon" src="img/duggan-veterinary.png" alt="Duggan">
-            <img class="trustedBy__icon" src="img/ibec.png" alt="Ibec Academy">
-            <a href="#" class="chat-widget"></a>
-          </div>
-        </div>
+        </nav>
       </div>
     </div>
   </header>
-  <section class="trial">
+  <section class="hero">
+    <svg class="elipse">
+      <use xlink:href="img/icons.svg#elipse"></use>
+    </svg>
+    <svg class="white-elipse">
+      <use xlink:href="img/icons.svg#white-elipse"></use>
+    </svg>
+    <div class="container">
+      <div class="hero__descr">
+        <h1 class="hero__title title">
+          Grow your training business, not your workload
+        </h1>
+        <p class="hero__text">
+          The #1 rated training management software for training providers who want to save time and crush sales targets.
+        </p>
+        <button class="hero__button">
+          Try a DEMO
+        </button>
+        <div class="office-bg">
+          <div class="office-bg__left">
 
+          </div>
+          <div class="office-bg__right">
+            <svg class="green-elipse">
+              <use xlink:href="img/icons.svg#green-elipse"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="trustedBy">
+          <span>Trysted By</span>
+          <img class="trustedBy__icon" src="img/carraig-safety.png" alt="Carraig Safety">
+          <img class="trustedBy__icon" src="img/irish-times-training.png" alt="Irish Times Training">
+          <img class="trustedBy__icon" src="img/ttm.png" alt="Training & Consultancy">
+          <img class="trustedBy__icon" src="img/duggan-veterinary.png" alt="Duggan">
+          <img class="trustedBy__icon" src="img/ibec.png" alt="Ibec Academy">
+          <a href="#" class="chat-widget"></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
   </section>
   <footer class="footer">
 
   </footer>
 
   <script src="js/main.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
