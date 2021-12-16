@@ -1,4 +1,41 @@
 <svg>
+    <symbol id="chat-widget" width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_341_2995)">
+            <rect x="8" y="4" width="60" height="60" rx="8" fill="#374EAC"/>
+        </g>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.8847 21H49.9616C51.5481 21 52.8462 22.2981 52.8462 23.8846V41.1923C52.8462 42.7788 51.5481 44.0769 49.9616 44.0769H30.9633C30.1988 44.0769 29.4656 44.3806 28.925 44.9212C27.1084 46.7378 24.0025 45.4502 24.0039 42.8813L24.0145 23.8846C24.0145 22.2981 25.2981 21 26.8847 21ZM31.2109 38.3075H45.634C46.4272 38.3075 47.0763 37.6584 47.0763 36.8652C47.0763 36.0719 46.4272 35.4229 45.634 35.4229H31.2109C30.4176 35.4229 29.7686 36.0719 29.7686 36.8652C29.7686 37.6584 30.4176 38.3075 31.2109 38.3075ZM45.634 33.9807H31.2109C30.4176 33.9807 29.7686 33.3316 29.7686 32.5384C29.7686 31.7451 30.4176 31.0961 31.2109 31.0961H45.634C46.4272 31.0961 47.0763 31.7451 47.0763 32.5384C47.0763 33.3316 46.4272 33.9807 45.634 33.9807ZM31.2109 29.6535H45.634C46.4272 29.6535 47.0763 29.0045 47.0763 28.2112C47.0763 27.418 46.4272 26.7689 45.634 26.7689H31.2109C30.4176 26.7689 29.7686 27.418 29.7686 28.2112C29.7686 29.0045 30.4176 29.6535 31.2109 29.6535Z" fill="white"/>
+        <defs>
+            <filter id="filter0_d_341_2995" x="0" y="0" width="76" height="76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="4"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_341_2995"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_341_2995" result="shape"/>
+            </filter>
+        </defs>
+    </symbol>
+    <symbol id="close-widget" width="76" height="64" viewBox="0 0 76 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_1050_1803)">
+            <rect x="8" y="4" width="60" height="60" rx="8" fill="#374EAC"/>
+        </g>
+        <path d="M48.6658 22.5318C48.3373 22.2026 47.8914 22.0176 47.4264 22.0176C46.9613 22.0176 46.5154 22.2026 46.1869 22.5318L37.59 31.1111L28.9931 22.5142C28.6646 22.185 28.2187 22 27.7537 22C27.2886 22 26.8427 22.185 26.5142 22.5142C25.8286 23.1999 25.8286 24.3074 26.5142 24.9931L35.1111 33.59L26.5142 42.1869C25.8286 42.8725 25.8286 43.9801 26.5142 44.6658C27.1999 45.3514 28.3075 45.3514 28.9931 44.6658L37.59 36.0689L46.1869 44.6658C46.8726 45.3514 47.9801 45.3514 48.6658 44.6658C49.3514 43.9801 49.3514 42.8725 48.6658 42.1869L40.0689 33.59L48.6658 24.9931C49.3339 24.325 49.3339 23.1999 48.6658 22.5318Z" fill="white"/>
+        <defs>
+            <filter id="filter0_d_1050_1803" x="0" y="0" width="76" height="76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="4"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1050_1803"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1050_1803" result="shape"/>
+            </filter>
+        </defs>
+    </symbol>
+
     <symbol id="underline" viewBox="0 0 71 2" fill="none" xmlns="http://www.w3.org/2000/svg">
         <line x1="1" y1="1" x2="70" y2="1" stroke="#D7DF3B" stroke-width="2" stroke-linecap="round"/>
     </symbol>
