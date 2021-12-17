@@ -128,9 +128,9 @@
               <input class="buttons__search-input" id="search-input" placeholder="Search CourseCo" type="text">
             </a>
             <a href="#" class="buttons__search-close" id="search-close" onclick="closeClick()">
-<!--              <svg width="20px" height="20px">-->
-<!--                <use xlink:href="img/icons.svg#search-close"></use>-->
-<!--              </svg>-->
+              <svg width="20px" height="20px">
+                <use xlink:href="img/icons.svg#search-close"></use>
+              </svg>
             </a>
             <a class="buttons__button">
               Try a demo
@@ -186,8 +186,39 @@
             <a href="#">
               <img class="trustedBy__icon" src="img/ibec.png" alt="Ibec Academy">
             </a>
-            <a href="#" class="chat-widget">
-
+          </div>
+          <div class="chat-widget">
+            <div class="chat-widget__body" id="chat-widget-body">
+              <div class="chat-widget__header">
+                <h4 class="chat-widget__title">
+                  <svg class="chat-widget__bot-icon" width="41" height="38">
+                    <use xlink:href="img/icons.svg#bot-icon"></use>
+                  </svg>
+                  CourseCo-Bot
+                </h4>
+              </div>
+              <div class="chat-widget__message-box">
+                <div class="chat-widget__date">
+                  TODAY 3:32 PM
+                </div>
+                <p class="chat-widget__incoming-message">
+                  <svg class="chat-widget__incoming-message-icon" width="24" height="24">
+                    <use xlink:href="img/icons.svg#chat-user-icon"></use>
+                  </svg>
+                  I can help you choose the right plan for your online busioness! Can I ask you a quick question?
+                </p>
+                <button class="chat-widget__button">
+                  Sure!
+                </button>
+              </div>
+            </div>
+            <a href="#" class="chat-widget__link" id="chat-widget-link" onclick="chatClick()">
+              <svg width="60" height="60" class="chat-widget__icon" id="chat-icon">
+                <use xlink:href="img/icons.svg#chat-widget"></use>
+              </svg>
+              <svg width="60" height="60" class="chat-widget__close-icon--disabled" id="chat-close-icon">
+                <use xlink:href="img/icons.svg#close-widget"></use>
+              </svg>
             </a>
           </div>
         </div>

@@ -14,6 +14,9 @@ body {
   color: #161D3C;
   text-align: center;
 }
+*:hover {
+  transition: 0.5s ease;
+}
 .header {
   position: fixed;
   width: 100%;
@@ -130,7 +133,7 @@ body {
       width: 38px;
       height: 38px;
       left: -68px;
-      top: 0px;
+      top: 0;
     }
   }
   &__search-input {
@@ -195,13 +198,12 @@ body {
     color: #fff;
     text-transform: uppercase;
     background: #374EAC;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 12px 32px;
     font-weight: 700;
     &:hover {
       background: #F2F3F6;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      transition: ease 0.5s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       color: #374EAC;
     }
   }
@@ -229,24 +231,125 @@ body {
   }
 }
 .trustedBy {
-  z-index: -1;
-   & span {
-     font-family: ProximaNova;
-     font-weight: 400;
-   }
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: 100px;
   z-index: 9;
   position: relative;
+  & span {
+    font-family: ProximaNova;
+    font-weight: 400;
+  }
 }
 .chat-widget {
-  position: absolute;
-  background: url("../img/chat-widget.svg");
-  width: 68px;
-  height: 65px;
-  top: -28px;
-  right: -90px;
+  &__link {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    background: #374EAC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    right: 60px;
+    bottom: 60px;
+    z-index: 9;
+    fill: #fff;
+    border: 2px solid #374EAC;
+    &:hover {
+      background: #fff;
+      fill: #374EAC;
+    }
+  }
+  &__icon {
+    transform: translate(24%, 25%);
+    transition: 0.5s ease;
+  }
+  &__icon--disabled {
+    opacity: 0;
+  }
+  &__close-icon--disabled {
+    transform: translate(30%, -82%);
+    transition: 0.5s ease;
+    opacity: 0;
+  }
+  &__close-icon--active {
+    opacity: 1;
+  }
+  &__body {
+    opacity: 0;
+    transition: 0.5s ease;
+    width: 291px;
+    min-height: 420px;
+    background: #FFFFFF;
+    border: 2px solid #374EAC;
+    border-radius: 8px;
+    position: fixed;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    right: 60px;
+    bottom: 136px;
+    z-index: 9;
+
+  }
+  &__body--active {
+    opacity: 1;
+  }
+  &__header {
+    background: #374EAC;
+  }
+  &__bot-icon {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 160%;
+    color: #fff;
+    text-align: left;
+    padding: 15px 70px;
+  }
+  &__date {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 160%;
+    color: #9498A9;
+    margin-bottom: 12px;
+  }
+  &__message-box {
+    padding: 16px;
+  }
+  &__incoming-message {
+    position: relative;
+    width: 170px;
+    line-height: 140%;
+    font-size: 12px;
+    color: #9498A9;
+    background: #F2F3F6;
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__incoming-message-icon {
+    position: absolute;
+    left: -36px;
+    bottom: 0;
+  }
+  &__button {
+    color: #374EAC;
+    font-size: 12px;
+    border: 1px solid #374EAC;
+    border-radius: 4px;
+    padding: 8px;
+    display: block;
+    margin-left: auto;
+    &:hover {
+      color: #fff;
+      background: #374EAC;
+    }
+  }
 }
 //////
 .dropdown {
@@ -258,9 +361,9 @@ body {
   display: none;
   position: absolute;
   background-color: #fff;
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 0 0 8px;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
   transition: 0.5s ease;
   &__inner {
@@ -327,7 +430,6 @@ body {
     font-size: 14px;
     font-weight: 500;
     position: relative;
-    font-family: Inter;
     color: #161D3C;
 }
   &__item-title--active {
@@ -352,7 +454,7 @@ body {
   &__right {
     display: none;
     background: #F2F3F6;
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0 8px 8px 0;
   }
   &__right--active {
     display: block;

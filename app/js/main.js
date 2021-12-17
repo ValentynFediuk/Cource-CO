@@ -22,3 +22,8 @@ function dropdownItemClick() {
   $('#booking-icon').toggleClass('dropdown-content__item-icon--active');
   $('#item-arrow-right').toggleClass('dropdown-content__item-arrow-right--active');
 }
+function chatClick() {
+  $('#chat-close-icon').toggleClass('chat-widget__close-icon--active');
+  $('#chat-icon').toggleClass('chat-widget__icon--disabled');
+  $('#chat-widget-body').toggleClass('chat-widget__body--active');
+}

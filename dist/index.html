@@ -127,7 +127,7 @@
             <a  href="#" class="buttons__search-button" onclick="searchClick()">
               <input class="buttons__search-input" id="search-input" placeholder="Search CourseCo" type="text">
             </a>
-            <a href="#"class="buttons__search-close" id="search-close" onclick="closeClick()">
+            <a href="#" class="buttons__search-close" id="search-close" onclick="closeClick()">
               <svg width="20px" height="20px">
                 <use xlink:href="img/icons.svg#search-close"></use>
               </svg>
@@ -140,58 +140,91 @@
       </div>
     </div>
   </header>
-  <section class="hero">
-    <svg class="elipse">
-      <use xlink:href="img/icons.svg#elipse"></use>
-    </svg>
-    <svg class="white-elipse">
-      <use xlink:href="img/icons.svg#white-elipse"></use>
-    </svg>
-    <div class="container">
-      <div class="hero__descr">
-        <h1 class="hero__title title">
-          Grow your training business, not your workload
-        </h1>
-        <p class="hero__text">
-          The #1 rated training management software for training providers who want to save time and crush sales targets.
-        </p>
-        <a class="hero__button">
-          Try a DEMO
-        </a>
-        <div class="office-bg">
-          <div class="office-bg__left">
+  <div class="wrapper">
+    <section class="hero">
+      <svg class="elipse">
+        <use xlink:href="img/icons.svg#elipse"></use>
+      </svg>
+      <svg class="white-elipse">
+        <use xlink:href="img/icons.svg#white-elipse"></use>
+      </svg>
+      <div class="container">
+        <div class="hero__descr">
+          <h1 class="hero__title title">
+            Grow your training business, not your workload
+          </h1>
+          <p class="hero__text">
+            The #1 rated training management software for training providers who want to save time and crush sales targets.
+          </p>
+          <a class="hero__button">
+            Try a DEMO
+          </a>
+          <div class="office-bg">
+            <div class="office-bg__left">
 
+            </div>
+            <div class="office-bg__right">
+              <svg class="green-elipse">
+                <use xlink:href="img/icons.svg#green-elipse"></use>
+              </svg>
+            </div>
           </div>
-          <div class="office-bg__right">
-            <svg class="green-elipse">
-              <use xlink:href="img/icons.svg#green-elipse"></use>
-            </svg>
+          <div class="trustedBy">
+            <span>Trysted By</span>
+            <a href="#">
+              <img class="trustedBy__icon" src="img/carraig-safety.png" alt="Carraig Safety">
+            </a>
+            <a href="#">
+              <img class="trustedBy__icon" src="img/irish-times-training.png" alt="Irish Times Training">
+            </a>
+            <a href="#">
+              <img class="trustedBy__icon" src="img/ttm.png" alt="Training & Consultancy">
+            </a>
+            <a href="#">
+              <img class="trustedBy__icon" src="img/duggan-veterinary.png" alt="Duggan">
+            </a>
+            <a href="#">
+              <img class="trustedBy__icon" src="img/ibec.png" alt="Ibec Academy">
+            </a>
           </div>
-        </div>
-        <div class="trustedBy">
-          <span>Trysted By</span>
-          <a href="#">
-            <img class="trustedBy__icon" src="img/carraig-safety.png" alt="Carraig Safety">
-          </a>
-          <a href="#">
-            <img class="trustedBy__icon" src="img/irish-times-training.png" alt="Irish Times Training">
-          </a>
-          <a href="#">
-            <img class="trustedBy__icon" src="img/ttm.png" alt="Training & Consultancy">
-          </a>
-          <a href="#">
-            <img class="trustedBy__icon" src="img/duggan-veterinary.png" alt="Duggan">
-          </a>
-          <a href="#">
-            <img class="trustedBy__icon" src="img/ibec.png" alt="Ibec Academy">
-          </a>
-          <a href="#" class="chat-widget"></a>
+          <div class="chat-widget">
+            <div class="chat-widget__body" id="chat-widget-body">
+              <div class="chat-widget__header">
+                <h4 class="chat-widget__title">
+                  <svg class="chat-widget__bot-icon" width="41" height="38">
+                    <use xlink:href="img/icons.svg#bot-icon"></use>
+                  </svg>
+                  CourseCo-Bot
+                </h4>
+              </div>
+              <div class="chat-widget__message-box">
+                <div class="chat-widget__date">
+                  TODAY 3:32 PM
+                </div>
+                <p class="chat-widget__incoming-message">
+                  <svg class="chat-widget__incoming-message-icon" width="24" height="24">
+                    <use xlink:href="img/icons.svg#chat-user-icon"></use>
+                  </svg>
+                  I can help you choose the right plan for your online busioness! Can I ask you a quick question?
+                </p>
+                <button class="chat-widget__button">
+                  Sure!
+                </button>
+              </div>
+            </div>
+            <a href="#" class="chat-widget__link" id="chat-widget-link" onclick="chatClick()">
+              <svg width="60" height="60" class="chat-widget__icon" id="chat-icon">
+                <use xlink:href="img/icons.svg#chat-widget"></use>
+              </svg>
+              <svg width="60" height="60" class="chat-widget__close-icon--disabled" id="chat-close-icon">
+                <use xlink:href="img/icons.svg#close-widget"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <footer class="footer">
 
   </footer>
