@@ -21,30 +21,22 @@ a {
   cursor: pointer;
 }
 
-html {
+html,
+body {
   height: 100%;
 }
 
-body {
-  margin: 0;
-  color: #fff;
-  /* Растягиваем body по высоте html */
+.wrapper {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
 
-header {
-  background: blue;
+.main {
+  flex: 1 0 auto;
 }
-
-main {
-  background: red;
+.footer {
+  flex: 0 0 auto;
 }
-
-footer {
-  background: black;
-}
-
 
 
