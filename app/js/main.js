@@ -3,6 +3,7 @@ function productClick() {
   $('#overlay').toggleClass('show-overlay');
   $('#product-dropdown').toggleClass('menu__item--active');
   $('#underline').toggleClass('menu__link-underline--active');
+  $('#hamburger').toggleClass('hamburger--padding');
 }
 function searchClick() {
   $('#search-input').addClass('buttons__search-input--active');
@@ -26,4 +27,10 @@ function chatClick() {
   $('#chat-close-icon').toggleClass('chat-widget__close-icon--active');
   $('#chat-icon').toggleClass('chat-widget__icon--disabled');
   $('#chat-widget-body').toggleClass('chat-widget__body--active');
+}
+function navBtnClick() {
+  $('#hamburger').toggleClass('hamburger--active');
+  $('#habmburger-overlay').toggleClass('show-overlay');
+  $('#clients-item').toggleClass('menu__item--disabled');
+  $('#company-item').toggleClass('menu__item--disabled');
 }
