@@ -545,6 +545,9 @@ body {
   }
   &__list {
     margin-right: 100px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &__list-title {
     font-weight: 600;
