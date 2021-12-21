@@ -170,8 +170,41 @@
     margin-bottom: 30px;
   }
 }
+@media (max-width: 800px) {
+  .trustedBy {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
 @media (max-width: 650px) {
+  .hamburger {
+    max-width: 134px;
+  }
+  .menu {
+    &__link {
+      font-size: 10px;
+    }
+    &__link-arrow {
+      right: 15px;
+      top: -3px;
+    }
+    &__link-arrow--product {
+      right: 20px;
+      top: -4px;
+    }
+    &__link-underline--active {
+      top: 19px;
+    }
+  }
+  .dropdown-content {
+    min-width: 105px;
+    &__item-title {
+      font-size: 8px;
+    }
+  }
   .office-img {
+    height: auto;
     &__center {
       display: flex;
       margin-bottom: 30px;
@@ -180,4 +213,57 @@
       display: none;
     }
   }
+  .buttons {
+    &__search-input--active {
+      width: 96px;
+      &::placeholder {
+        color: white;
+      }
+    }
+    &__search-close {
+      left: 45px;
+      top: -53px;
+    }
+    &__button {
+      font-size: 8px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .nav {
+    margin-left: 10px;
+  }
+  .hero {
+    padding: 153px 0 50px;
+    &__title {
+      width: 390px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 14px;
+      color: #92989D;
+      width: 280px;
+      margin-bottom: 20px;
+    }
+    &__button {
+      padding: 5px 20px;
+      font-size: 10px;
+      margin-bottom: 60px;
+    }
+  }
+  .office-img {
+    margin-bottom: 10px;
+  }
+  .trustedBy {
+    font-size: 14px;
+    color: #92989D;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    & span {
+      width: 65px;
+    }
+  }
+}
+@media (max-width: 430px) {
+
 }
