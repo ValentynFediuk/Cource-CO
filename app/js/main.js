@@ -34,3 +34,20 @@ function navBtnClick() {
   $('#clients-item').toggleClass('menu__item--disabled');
   $('#company-item').toggleClass('menu__item--disabled');
 }
+function puzzleHover() {
+  $('#puzzle-img-info--3').addClass('one-place__TMS-info--active');
+  $('#puzzle-img--3').css("opacity", "1");
+}
+function puzzleLeave() {
+  $('#puzzle-img-info--3').removeClass('one-place__TMS-info--active');
+  $('#puzzle-img--3').css("opacity", "0.5");
+}
+function onePlaceBtnHover() {
+  $('#puzzle-img-1').addClass('one-place__puzzle-img-1--composite');
+  $('#one-place__puzzle').addClass('one-place__puzzle-composite')
+}
+function onePlaceBtnLeave() {
+  // $('#puzzle-img-1').removeClass('one-place__puzzle-img-1--composite');
+  // $('#one-place__puzzle').removeClass('one-place__puzzle-composite')
+
+}

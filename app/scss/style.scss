@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 *:hover {
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 .header {
   position: fixed;
@@ -85,7 +85,7 @@ body {
   &__link-arrow {
     position: absolute;
     right: 20px;
-    top: 4px;
+    top: 3px;
   }
   &__link-underline {
     display: none;
@@ -273,7 +273,7 @@ body {
     border-radius: 8px;
     right: 60px;
     bottom: 60px;
-    z-index: 9;
+    z-index: 99;
     fill: #fff;
     border: 2px solid #374EAC;
     &:hover {
@@ -308,7 +308,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     right: 60px;
     bottom: 176px;
-    z-index: 9;
+    z-index: 99;
     transform: translate(0%, 200%);
     transition: 1s ease;
   }
@@ -532,6 +532,157 @@ body {
   cursor: pointer;
 }
 //overlay
+.items {
+  text-align: center;
+  &__title {
+    font-size: 34px;
+    margin-bottom: 32px;
+  }
+  &__text {
+    color: #9498A9;
+    margin-bottom: 120px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 120px 30px;
+  }
+  &__item-icon {
+    margin-bottom: 30px;
+  }
+  &__item-title {
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &__item-text {
+    color: #9498A9;
+    line-height: 29px;
+    font-size: 18px;
+    width: 270px;
+    margin: 0 auto;
+  }
+}
+.one-place {
+  padding: 100px 0 130px;
+  text-align: center;
+  &__text {
+    color: #9498A9;
+    line-height: 32px;
+    margin-bottom: 165px;
+  }
+  &__puzzle {
+    position: relative;
+    height: 531px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+  }
+  &__puzzle-img--3 {
+  }
+  &__puzzle-img--3-wrapper {
+    width: 155px;
+    height: 135px;
+    position: absolute;
+    top: 48px;
+    right: 304px;
+    opacity: 0.5;
+    z-index: 99;
+  }
+  &__puzzle--drop-left {
+    &:hover {
+      display: block;
+    }
+  }
+  &__puzzle-img {
+    position: absolute;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+  }
+  &__puzzle-img {
+
+  }
+  &__puzzle-composite {
+    width: 600px;
+    margin: 0 auto;
+  }
+  &__TMS-info {
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    right: 49px;
+    background: #F2F3F6;
+    border-radius: 8px;
+    z-index: 9;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: #9498A9;
+    text-align: left;
+    margin-bottom: 8px;
+    display: none;
+    &::before {
+      content: '';
+      position: absolute;
+      background: url("../img/TMS-arrow.svg");
+      width: 15px;
+      height: 16px;
+      left: -13px;
+    }
+  }
+  &__TMS-info--active {
+    display: block;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__TMS-info-title {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  &__TMS-info-text {
+    font-size: 14px;
+    text-transform: none;
+    width: 228px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    line-height: 140%;
+  }
+  &__TMS-info-link {
+    color: #374EAC;
+    font-weight: 400;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background: url("../img/arrow-down.svg");
+      transform: rotate(-90deg);
+      top: 4px;
+      right: -24px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__btn {
+    background: #374EAC;
+    border: 2px solid #374EAC;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 23px;
+    padding: 7px 140px;
+    line-height: 43px;
+    &:hover {
+      background: #F2F3F6;
+      color: #374eac;
+      .one-place__puzzle-img--4 {
+        left: 0;
+      }
+    }
+  }
+}
 .footer {
   &__inner {
     padding: 112px 0 18px;
