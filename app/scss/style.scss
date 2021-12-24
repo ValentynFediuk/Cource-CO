@@ -600,6 +600,55 @@ body {
   &__puzzle-img {
     position: absolute;
     filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+    &-1 {
+      top: 0;
+      left: 166px;
+    }
+    &-2 {
+      top: 81px;
+      left: 374px;
+    }
+    &-3 {
+      top: 44px;
+      right: 334px;
+      opacity: 0.5;
+    }
+    &-4 {
+      top: 90px;
+      right: 100px;
+    }
+    &-5 {
+      top: 130px;
+      left: 0;
+    }
+    &-6 {
+      top: 180px;
+      left: 164px;
+    }
+    &-7 {
+      right: 178px;
+      bottom: 130px;
+    }
+    &-8 {
+      right: 0;
+      bottom: 128px;
+    }
+    &-9 {
+      left: 150px;
+      bottom: 17px;
+    }
+    &-10 {
+      left: 325px;
+      bottom: 50px;
+    }
+    &-11 {
+      right: 379px;
+      bottom: 48px;
+    }
+    &-12 {
+      right: 160px;
+      bottom: 0;
+    }
   }
   &__puzzle-img {
 
