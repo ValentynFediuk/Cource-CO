@@ -1,0 +1,33 @@
+.items {
+  text-align: center;
+  &__title {
+    font-size: 34px;
+    margin-bottom: 32px;
+  }
+  &__text {
+    color: #9498A9;
+    margin-bottom: 120px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 120px 30px;
+  }
+  &__item-icon {
+    margin-bottom: 30px;
+  }
+  &__item-title {
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &__item-text {
+    color: #9498A9;
+    line-height: 29px;
+    font-size: 18px;
+    width: 270px;
+    margin: 0 auto;
+  }
+}
