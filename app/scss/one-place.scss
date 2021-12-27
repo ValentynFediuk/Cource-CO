@@ -12,9 +12,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid;
-  }
-  &__puzzle-img--3 {
   }
   &__puzzle-img--3-wrapper {
     width: 155px;
@@ -83,12 +80,9 @@
       bottom: 0;
     }
   }
-  &__puzzle-img {
-
-  }
-  &__puzzle-composite {
-    width: 600px;
-    margin: 0 auto;
+  &__puzzle-folded {
+    display: none;
+    position: absolute;
   }
   &__TMS-info {
     padding: 20px;
@@ -156,12 +150,10 @@
     font-size: 23px;
     padding: 7px 140px;
     line-height: 43px;
+    z-index: 999;
     &:hover {
       background: #F2F3F6;
       color: #374eac;
-      .one-place__puzzle-img--4 {
-        left: 0;
-      }
     }
   }
 }
