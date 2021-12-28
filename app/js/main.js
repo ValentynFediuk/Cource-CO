@@ -43,11 +43,11 @@ function puzzleLeave() {
   $('#puzzle-img--3').css("opacity", "0.5");
 }
 function onePlaceBtnHover() {
-  $('.one-place__puzzle-img').css('display', 'none');
-  $('.one-place__puzzle-folded').css('display', 'block');
+  $('.one-place__puzzle-img').addClass('one-place__puzzle-img--disabled');
+  $('.one-place__puzzle-folded').addClass('one-place__puzzle-folded--active');
 }
 function onePlaceBtnLeave() {
-  $('.one-place__puzzle-img').css('display', 'block');
-  $('.one-place__puzzle-folded').css('display', 'none');
+  $('.one-place__puzzle-img').removeClass('one-place__puzzle-img--disabled');
+  $('.one-place__puzzle-folded').removeClass('one-place__puzzle-folded--active');
 
 }

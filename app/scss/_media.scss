@@ -384,12 +384,9 @@
 }
 @media (max-width: 450px) {
   .footer {
-    &__lists {
-
-    }
     &__list {
       &:first-child {
-        margin-right: 90px;
+        margin-right: 86px;
       }
       &:nth-child(2) {
         margin-right: 30px;
