@@ -49,5 +49,4 @@ function onePlaceBtnHover() {
 function onePlaceBtnLeave() {
   $('.one-place__puzzle-img').removeClass('one-place__puzzle-img--disabled');
   $('.one-place__puzzle-folded').removeClass('one-place__puzzle-folded--active');
-
 }
